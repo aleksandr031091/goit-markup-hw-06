@@ -607,6 +607,41 @@ img {
   flex-direction: column;
   width: 270px;
 }
+.subscribe-box {
+  display: flex;
+
+  margin-left: auto;
+}
+.button-subscribe {
+  margin-left: 12px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+  height: 50px;
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  color: var(--primarycolor);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+}
+#mail {
+  display: block;
+  width: 358px;
+  height: 50px;
+}
+.subtitle-mail {
+  display: block;
+  margin-bottom: 20px;
+}
 /*===============подвал===============*/
 
 /*===============соц сети===============*/
@@ -694,7 +729,26 @@ img {
 /*===============кнопка===============*/
 
 /*===============модальное окно===============*/
-.modal-button {
+.button-send {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  color: var(--primarycolor);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+}
+.button-close {
   position: absolute;
   content: '';
   top: 8px;
@@ -708,7 +762,7 @@ img {
   box-sizing: border-box;
   border-radius: 50%;
 }
-.modal-svg {
+.modal-svg-close {
   width: 11px;
   height: 11px;
   fill: #000000;
@@ -745,5 +799,16 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+.subtitle-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #212121;
+}
 
-/*===============модальное окно===============*/
+.filling-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+/*===============модальное окно===============*/ ;

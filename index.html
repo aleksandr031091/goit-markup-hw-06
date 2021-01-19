@@ -447,15 +447,47 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-box">
+          <div>
+            <form>
+              <label class="subtitle-mail" for="meil"
+                >Подпишитесь на рассылку</label
+              >
+              <input type="email" name="mail" id="mail" />
+            </form>
+          </div>
+          <button class="button-subscribe">Подписаться</button>
+          <svg>
+            <use href="./img/svg/symbol-defs.svg#icon-icon-send"></use>
+          </svg>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button" data-modal-close>
-          <svg class="modal-svg">
+        <button class="button-close" data-modal-close>
+          <svg class="modal-svg-close">
             <use href="./img/svg/symbol-defs.svg#icon-Vector"></use>
           </svg>
         </button>
+        <div class="filling-modal">
+          <b class="subtitle-modal">Оставьте свои данные, мы вам перезвоним</b>
+          <div role="group">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+            <label for="tel">Телефон</label>
+            <input type="tell" name="tell" id="tel" />
+            <label for="mail-modal">Почта</label>
+            <input type="email" name="mall" id="mail.modal" />
+          </div>
+          <label for="text"></label>
+          <textarea name="text" id="" cols="30" rows="10" id="text"></textarea>
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю Условия договора</label
+          >
+          <input type="checkbox" name="policy" id="policy" />
+          <button class="button-send">Отправить</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
