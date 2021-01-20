@@ -456,10 +456,7 @@
               <input type="email" name="mail" id="mail" />
             </form>
           </div>
-          <button class="button-subscribe">Подписаться</button>
-          <svg>
-            <use href="./img/svg/symbol-defs.svg#icon-icon-send"></use>
-          </svg>
+          <div><button class="button-subscribe">Подписаться</button></div>
         </div>
       </div>
     </footer>
@@ -472,21 +469,62 @@
         </button>
         <div class="filling-modal">
           <b class="subtitle-modal">Оставьте свои данные, мы вам перезвоним</b>
-          <div role="group">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
-            <label for="tel">Телефон</label>
-            <input type="tell" name="tell" id="tel" />
-            <label for="mail-modal">Почта</label>
-            <input type="email" name="mall" id="mail.modal" />
-          </div>
-          <label for="text"></label>
-          <textarea name="text" id="" cols="30" rows="10" id="text"></textarea>
-          <label for="policy"
-            >Соглашаюсь с рассылкой и принимаю Условия договора</label
-          >
-          <input type="checkbox" name="policy" id="policy" />
-          <button class="button-send">Отправить</button>
+          <form action="" class="nodal-form">
+            <label class="form-field" for="name"
+              ><span>Имя</span
+              ><input
+                class="form-field-imput"
+                type="text"
+                name="name"
+                id="name"
+              /><svg>
+                <use href="./img/svg/symdol-defs.svg#icon-tel"></use>
+              </svg>
+            </label>
+
+            <label class="form-field" for="tel"
+              ><span>Телефон</span
+              ><input
+                class="form-field-imput"
+                type="tell"
+                name="tell"
+                id="tel"
+              /><svg>
+                <use></use>
+              </svg>
+            </label>
+
+            <label class="form-field" for="mail-modal"
+              ><span>Почта</span
+              ><input
+                class="form-field-imput"
+                type="email"
+                name="mall"
+                id="mail.modal"
+              /><svg>
+                <use></use>
+              </svg>
+            </label>
+
+            <label class="form-area" for="text"
+              ><span>Комментарий</span
+              ><textarea
+                class="form-area-text"
+                name="text"
+                id=""
+                cols="30"
+                rows="10"
+                id="text"
+              ></textarea>
+            </label>
+
+            <label class="form-policy" for="policy"
+              ><span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
+              <input type="checkbox" name="policy" id="policy"
+            /></label>
+
+            <button class="button-submit">Отправить</button>
+          </form>
         </div>
       </div>
     </div>
