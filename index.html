@@ -469,47 +469,48 @@
         </button>
         <div class="filling-modal">
           <b class="subtitle-modal">Оставьте свои данные, мы вам перезвоним</b>
-          <form action="" class="nodal-form">
-            <label class="form-field" for="name"
-              ><span>Имя</span
+          <form action="" class="modal-form">
+            <label class="form-field"
+              ><span class="form-field-name">Имя</span
               ><input
                 class="form-field-imput"
                 type="text"
                 name="name"
                 id="name"
-              /><svg>
-                <use href="./img/svg/symdol-defs.svg#icon-tel"></use>
+              />
+              <svg class="modal-svg-feild" width="12" height="12">
+                <use href="./img/svg/symbol-defs.svg#icon-person"></use>
               </svg>
             </label>
 
-            <label class="form-field" for="tel"
-              ><span>Телефон</span
+            <label class="form-field"
+              ><span class="form-field-name">Телефон</span
               ><input
                 class="form-field-imput"
-                type="tell"
-                name="tell"
+                type="tel"
+                name="tel"
                 id="tel"
-              /><svg>
-                <use></use>
+              /><svg class="modal-svg-feild" width="13" height="13">
+                <use href="./img/svg/symbol-defs.svg#icon-tel"></use>
               </svg>
             </label>
 
-            <label class="form-field" for="mail-modal"
-              ><span>Почта</span
+            <label class="form-field"
+              ><span class="form-field-name">Почта</span
               ><input
                 class="form-field-imput"
                 type="email"
-                name="mall"
+                name="mail"
                 id="mail.modal"
-              /><svg>
-                <use></use>
+              /><svg class="modal-svg-feild" width="15" height="12">
+                <use href="./img/svg/symbol-defs.svg#icon-mall"></use>
               </svg>
             </label>
 
-            <label class="form-area" for="text"
-              ><span>Комментарий</span
+            <label class="form-area"
+              ><span class="form-field-name">Комментарий</span
               ><textarea
-                class="form-area-text"
+                class="form-area-feild"
                 name="text"
                 id=""
                 cols="30"
@@ -518,8 +519,10 @@
               ></textarea>
             </label>
 
-            <label class="form-policy" for="policy"
-              ><span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
+            <label class="form-policy"
+              ><span class="policity-text"
+                >Соглашаюсь с рассылкой и принимаю Условия договора</span
+              >
               <input type="checkbox" name="policy" id="policy"
             /></label>
 

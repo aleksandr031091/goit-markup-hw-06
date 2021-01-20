@@ -724,33 +724,73 @@ img {
 /*===============кнопка===============*/
 
 /*===============модальное окно===============*/
-.nodal-form {
+.modal-form {
   display: flex;
   flex-direction: column;
   width: 448px;
 }
 .form-field {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 28px;
 }
 .form-field-imput {
   display: inline-block;
   width: 100%;
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-field-name {
+  position: absolute;
+  top: -18px;
+  left: 0;
+
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-svg-feild {
+  position: absolute;
+  top: 14px;
+  left: 15px;
 }
 .form-area {
+  position: relative;
   margin-bottom: 20px;
 }
-.form-area-text {
+
+.form-area-feild {
   display: block;
   width: 100%;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
   padding-left: 16px;
+
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .form-policy {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 30px;
+}
+.policity-text {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 .button-submit {
   margin-left: auto;
@@ -766,10 +806,16 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--primarycolor);
-  background: #2196f3;
+  background: var(--accentcolor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #188ce8;
 }
 .button-close {
   position: absolute;
@@ -790,6 +836,12 @@ img {
   height: 11px;
   fill: #000000;
   background-size: contain;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-close:hover .modal-svg-close,
+.button-close:focus .modal-svg-close {
+  fill: var(--accentcolor);
 }
 .backdrop {
   position: fixed;
@@ -823,7 +875,7 @@ img {
 }
 .subtitle-modal {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 20px;
