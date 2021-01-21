@@ -470,7 +470,11 @@
           <b class="subtitle-modal">Оставьте свои данные, мы вам перезвоним</b>
           <label class="form-field"
             >Имя<span class="form-field-box"
-              ><input class="form-field-imput" type="text" name="name" />
+              ><input
+                class="form-field-imput"
+                type="text"
+                name="name"
+                required />
               <svg class="modal-svg-feild" width="12" height="12">
                 <use href="./img/svg/symbol-defs.svg#icon-person"></use></svg
             ></span>
@@ -482,7 +486,7 @@
                 class="form-field-imput"
                 type="tel"
                 name="tel"
-                id="tel" /><svg class="modal-svg-feild" width="13" height="13">
+                required /><svg class="modal-svg-feild" width="13" height="13">
                 <use href="./img/svg/symbol-defs.svg#icon-tel"></use></svg
             ></span>
           </label>
@@ -493,11 +497,7 @@
                 class="form-field-imput"
                 type="email"
                 name="mail"
-                id="mail.modal" /><svg
-                class="modal-svg-feild"
-                width="15"
-                height="12"
-              >
+                required /><svg class="modal-svg-feild" width="15" height="12">
                 <use href="./img/svg/symbol-defs.svg#icon-mall"></use></svg
             ></span>
           </label>
@@ -508,12 +508,18 @@
               name="text"
               cols="30"
               rows="10"
-              id="text"
             ></textarea>
           </label>
-          <input type="checkbox" name="policy" id="policy" />
+
           <label class="form-policy"
-            >Соглашаюсь с рассылкой и принимаю Условия договора
+            ><input
+              type="checkbox"
+              name="policy"
+              class="visually-hidden"
+            /><span class="text-policy checkin"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="link-policiti">Условия договора</a></span
+            >
           </label>
 
           <button type="submit" class="button-submit">Отправить</button>
