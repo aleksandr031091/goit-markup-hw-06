@@ -401,7 +401,7 @@
     </main>
 
     <footer class="footer-head">
-      <div class="container-footer">
+      <div class="container container-footer">
         <div class="contact-box">
           <a href="./index.html" class="logo-footer">
             <span class="capital-footer">Web</span>Studio</a
@@ -414,7 +414,7 @@
             <a href="" class="footer-head-tel">+38 099 111 11 11</a>
           </address>
         </div>
-        <div class="social-box">
+        <div class="contact-box">
           <p class="tittle-social">присоединяйтесь</p>
           <ul class="list list-social">
             <li class="items">
@@ -448,13 +448,16 @@
           </ul>
         </div>
         <div class="subscribe-box">
-          <div>
-            <form>
-              <label class="subtitle-mail">Подпишитесь на рассылку</label>
-              <input type="email" name="mail" id="mail" />
-            </form>
-          </div>
-          <div><button class="button-subscribe">Подписаться</button></div>
+          <b class="tittle-subscribe">Подпишитесь на рассылку</b>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              name="mail"
+              class="input-subscribe"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button-subscribe">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -506,8 +509,7 @@
             >Комментарий<textarea
               class="form-area-feild"
               name="text"
-              cols="30"
-              rows="10"
+              placeholder="Введите текст"
             ></textarea>
           </label>
 
