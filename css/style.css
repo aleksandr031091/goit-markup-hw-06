@@ -727,42 +727,49 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 448px;
+
+  width: 100%;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 .form-field {
-  position: relative;
   margin-bottom: 28px;
-}
-.form-field-imput {
-  display: inline-block;
-  width: 100%;
-  height: 40px;
-
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
 }
-.form-field-name {
-  position: absolute;
-  top: -18px;
-  left: 0;
-
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
-  color: #757575;
+.form-field-box {
+  display: block;
+  position: relative;
+  margin-top: 4px;
 }
 .modal-svg-feild {
   position: absolute;
-  top: 14px;
+  top: 50%;
   left: 15px;
+  transform: translate(0, -50%);
 }
+.form-field-imput::placeholder .form-field-box.modal-svg-feild {
+  border-color: #2196f3;
+}
+.form-field-imput {
+  display: block;
+  padding-left: 42px;
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
 .form-area {
-  position: relative;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.01em;
 }
 
 .form-area-feild {
@@ -773,12 +780,11 @@ img {
   padding-bottom: 12px;
   padding-left: 16px;
 
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.form-area:focus-within .form-area-feild {
+  border-color: #2196f3;
 }
 .form-policy {
   position: relative;
@@ -882,12 +888,4 @@ img {
   line-height: 1.15;
   color: #212121;
 }
-
-.filling-modal {
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-}
-
 /*===============модальное окно===============*/ ;
