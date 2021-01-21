@@ -656,10 +656,8 @@ img {
 }
 .button-subscribe:focus,
 .button-subscribe:hover {
-  background-color:  #188ce8;
+  background-color: #188ce8;
 }
-}
-
 .subtitle-mail {
   display: block;
   margin-bottom: 20px;
@@ -939,4 +937,4 @@ img {
   line-height: 1.15;
   color: #212121;
 }
-/*===============модальное окно===============*/ ;
+/*===============модальное окно===============*/
